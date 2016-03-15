@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/logohoriz"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvSaludo"
+        android:inputType="textMultiLine"
+        android:textColor="#033076"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="PRÉSTAMO"
+            android:id="@+id/bPrest"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorTextoTitulo"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="DEVOLUCIÓN"
+            android:id="@+id/bDev"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorTextoTitulo"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>
