@@ -71,8 +71,8 @@ import android.content.ActivityNotFoundException;
  * different text labels.</p>
  *
  * <p>Note that {@link #initiateScan(Activity)} returns an {@link AlertDialog} which is non-null if the
- * user was prompted to download the application. This lets the calling app potentially manage the dialog.
- * In particular, ideally, the app dismisses the dialog if it's still active in its {@link Activity#onPause()}
+ * user was prompted to download the application. This lets the calling app potentially manage the dialog_p.
+ * In particular, ideally, the app dismisses the dialog_p if it's still active in its {@link Activity#onPause()}
  * method.</p>
  *
  * <h2>Sharing text via barcode</h2>
@@ -148,8 +148,8 @@ public final class IntentIntegrator {
     /**
      * See {@link #initiateScan(Activity, CharSequence, CharSequence, CharSequence, CharSequence, CharSequence)} --
      * same, but scans for all supported barcode types.
-     * @param stringTitle title of dialog prompting user to download Barcode Scanner
-     * @param stringMessage text of dialog prompting user to download Barcode Scanner
+     * @param stringTitle title of dialog_p prompting user to download Barcode Scanner
+     * @param stringMessage text of dialog_p prompting user to download Barcode Scanner
      * @param stringButtonYes text of button user clicks when agreeing to download
      *  Barcode Scanner (e.g. "Yes")
      * @param stringButtonNo text of button user clicks when declining to download
@@ -174,8 +174,8 @@ public final class IntentIntegrator {
     /**
      * Invokes scanning.
      *
-     * @param stringTitle title of dialog prompting user to download Barcode Scanner
-     * @param stringMessage text of dialog prompting user to download Barcode Scanner
+     * @param stringTitle title of dialog_p prompting user to download Barcode Scanner
+     * @param stringMessage text of dialog_p prompting user to download Barcode Scanner
      * @param stringButtonYes text of button user clicks when agreeing to download
      *  Barcode Scanner (e.g. "Yes")
      * @param stringButtonNo text of button user clicks when declining to download
@@ -291,8 +291,8 @@ public final class IntentIntegrator {
      * scan the text off the screen of the device.
      *
      * @param text the text string to encode as a barcode
-     * @param stringTitle title of dialog prompting user to download Barcode Scanner
-     * @param stringMessage text of dialog prompting user to download Barcode Scanner
+     * @param stringTitle title of dialog_p prompting user to download Barcode Scanner
+     * @param stringMessage text of dialog_p prompting user to download Barcode Scanner
      * @param stringButtonYes text of button user clicks when agreeing to download
      *  Barcode Scanner (e.g. "Yes")
      * @param stringButtonNo text of button user clicks when declining to download

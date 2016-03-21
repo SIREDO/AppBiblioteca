@@ -6,12 +6,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageView
-        android:layout_width="350dp"
-        android:layout_height="150dp"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/logohoriz"
-        android:layout_marginTop="60dp" />
+        android:layout_marginTop="60dp"
+        android:src="@drawable/nombredialog" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/tvSaludo"
         android:inputType="textMultiLine"
-        android:textColor="#033076"
+        android:textColor="#030303"
         android:textSize="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp" />
@@ -38,7 +38,7 @@
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@color/colorTextoTitulo"
+            android:background="#030000"
             android:textColor="#ffffff"/>
 
         <Button
@@ -50,7 +50,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
-            android:background="@color/colorTextoTitulo"
+            android:background="#030000"
             android:textColor="#ffffff"/>
     </LinearLayout>
 

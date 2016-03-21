@@ -11,7 +11,7 @@
         android:text="@string/bienvenido"
         android:id="@+id/tvBienv"
         android:layout_marginTop="60dp"
-        android:textColor="#033076"
+        android:textColor="#030000"
         android:textSize="20dp"
         android:layout_gravity="center_horizontal" />
 
@@ -23,7 +23,7 @@
         android:id="@+id/tvPideDat"
         android:layout_marginTop="10dp"
         android:textSize="16dp"
-        android:textColor="@color/colorTextoTitulo"
+        android:textColor="#030000"
         android:layout_gravity="center_horizontal" />
 
     <TextView
@@ -126,7 +126,7 @@
         android:text="GUARDAR"
         android:id="@+id/bGuardaDatos"
         android:layout_gravity="center_horizontal"
-        android:background="@color/colorTextoTitulo"
+        android:background="#030000"
         android:textColor="#ffffff" />
 
 </LinearLayout>

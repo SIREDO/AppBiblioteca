@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fdfdfe">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="   VALENCIA_LAB"
+        android:id="@+id/tvVal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:background="#020202" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="   Se va a realizar el préstamo del libro"
+        android:id="@+id/tvdialog"
+        android:layout_gravity="center_vertical"
+        android:textColor="#030303"
+        android:layout_marginTop="10dp"
+        android:background="#fdfdfe" />
+</LinearLayout>
