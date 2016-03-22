@@ -126,7 +126,7 @@
         android:text="GUARDAR"
         android:id="@+id/bGuardaDatos"
         android:layout_gravity="center_horizontal"
-        android:background="#030000"
+        android:background="@color/colorPrimary"
         android:textColor="#ffffff" />
 
 </LinearLayout>

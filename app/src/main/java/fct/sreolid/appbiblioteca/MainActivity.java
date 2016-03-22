@@ -1,9 +1,12 @@
 package fct.sreolid.appbiblioteca;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -49,15 +52,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //hacemos invisible el botón de devolución
-               // dev.setVisibility(View.INVISIBLE);
+                //Comprobamos el estado de la red
+                // si no hay acceso a internet lanzamos menjase al usuario
+                if (!verificaConexion(getApplicationContext())) {
+                    Toast.makeText(getBaseContext(),
+                            "Comprueba tu conexión a Internet.  ", Toast.LENGTH_LONG)
+                            .show();
 
-                //inicializamos en escaneo
-                IntentIntegrator.initiateScan(MainActivity.this);
-                operacion= "prestamo";
-
-                //volvemos a hacer visible el botón
-                //dev.setVisibility(View.VISIBLE);
+                }
+                //si hay acceso a internet continuamos el proceso
+                else if(verificaConexion(getApplicationContext())){
+                    //inicializamos en escaneo
+                    IntentIntegrator.initiateScan(MainActivity.this);
+                    operacion= "prestamo";
+                }
             }
         });
 
@@ -65,19 +73,22 @@ public class MainActivity extends AppCompatActivity {
         dev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Comprobamos el estado de la red
+                // si no hay acceso a internet lanzamos menjase al usuario
+                if (!verificaConexion(getApplicationContext())) {
+                    Toast.makeText(getBaseContext(),
+                            "Comprueba tu conexión a Internet.  ", Toast.LENGTH_LONG)
+                            .show();
 
-                //hacemos invisible el botón de préstamos
-               // prest.setVisibility(View.INVISIBLE);
-
-                //inicializamos en escaneo
-                IntentIntegrator.initiateScan(MainActivity.this);
-                operacion= "devolucion";
-
-                //volvemos a hacer visible el botón
-               // prest.setVisibility(View.VISIBLE);
+                }
+                //si hay acceso a internet continuamos el proceso
+                else if(verificaConexion(getApplicationContext())){
+                    //inicializamos en escaneo
+                    IntentIntegrator.initiateScan(MainActivity.this);
+                    operacion= "devolucion";
+                }
             }
         });
-
 
     }
     //Marcamos lo que queremos que haga una vez haya leído el código
@@ -144,6 +155,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Método que comprueba el estado de la red
+    public static boolean verificaConexion(Context ctx) {
+        boolean bConectado = false;
+        ConnectivityManager connec = (ConnectivityManager) ctx
+                .getSystemService(Context.CONNECTIVITY_SERVICE);
+        // No sólo wifi, también GPRS
+        NetworkInfo[] redes = connec.getAllNetworkInfo();
+        // este bucle debería no ser tan ñapa
+        for (int i = 0; i < 2; i++) {
+            // ¿Tenemos conexión? ponemos a true
+            if (redes[i].getState() == NetworkInfo.State.CONNECTED) {
+                bConectado = true;
+            }
+        }
+        return bConectado;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
