@@ -3,10 +3,11 @@
     <string name="no">No</string>
     <string name="app_name">AppBiblioteca</string>
     <string name="action_settings">Mis Datos</string>
+    <string name="historial">Historial de préstamos</string>
     <string name="title_activity_datos">Datos de usuario</string>
     <string name="bienvenido">Bienvenid@ al sevicio de préstamo</string>
     <string name="bienvenido_land">"Bienvenid@ al sevicio \n de préstamo"</string>
-    <string name="pideDatos">Necesitamos conocer algunos datos para que el servicio de préstamos funcione de manera eficiente. (...)</string>
-    <string name="pideDatos_land">"Necesitamos conocer algunos datos para que el servicio de préstamos funcione de manera eficiente. Podrás modificar tus datos en cualquier momento, accediendo desde el menú superior a 'Mis Datos'."</string>
+    <string name="pideDatos">Por favor, rellena todos los campos para poder utilizar el sistema de préstamos. Estos datos sólo serán utilizados por la aplicación para la gestión bibliotecaria de ValenciaLab.</string>
     <string name="saludo_inicio">"Hola nom_usuario,\n ¿qué podemos hacer por ti?"</string>
+    <string name="title_activity_historial">Historial</string>
 </resources>

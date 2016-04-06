@@ -2,26 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#fcfdfd">
+    android:background="#fcfdfd"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="   VALENCIA_LAB"
-        android:id="@+id/tvVal"
+        android:id="@+id/tvVald"
         android:layout_gravity="center_vertical"
         android:textColor="#ffffff"
-        android:background="#000003" />
+        android:layout_weight="1.10"
+        android:background="@color/colorPrimary" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="  Se va a realizar la devolución del libro"
-        android:id="@+id/tvdialog"
-        android:layout_gravity="center_vertical"
+        android:id="@+id/tvdialogd"
+        android:layout_gravity="center_horizontal"
         android:textColor="#000003"
-        android:layout_marginTop="10dp"
-        android:background="#fdfefe" />
+        android:layout_marginTop="20dp"
+        android:background="#fdfefe"
+        android:text="Se va a realizar la devolución del libro" />
 </LinearLayout>

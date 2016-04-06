@@ -19,20 +19,16 @@ package fct.sreolid.appbiblioteca;
  * limitations under the License.
  */
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
+import android.util.Log;
 
-
-
-        import java.lang.reflect.InvocationTargetException;
-        import java.lang.reflect.Method;
-
-        import android.app.Activity;
-        import android.app.AlertDialog;
-        import android.content.ActivityNotFoundException;
-        import android.content.DialogInterface;
-        import android.content.Intent;
-        import android.net.Uri;
-        import android.util.Log;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 /**
  * <p>A utility class which helps ease integration with Barcode Scanner via {@link Intent}s. This is a simple

@@ -3,9 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:anim/linear_interpolator"
     android:fillAfter="true">
-<translate
-    android:duration="4000"
-    android:fromYDelta="0%"
-    android:toYDelta="100%"
-    android:zAdjustment="bottom"/>
+
+    <alpha
+        android:duration="2000"
+        android:toAlpha="1.0" android:fromAlpha="0.5"/>
 </set>
+
+
